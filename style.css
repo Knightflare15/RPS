@@ -3,7 +3,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     background-color: aliceblue;
 }
 .score,.images{
@@ -11,6 +10,9 @@ body{
     justify-content: space-evenly;
     flex :1;
     gap: 10em;
+}
+.score{
+    margin-top: auto;
 }
 .human,.computer{
     background-color: beige;
@@ -24,6 +26,7 @@ img{
     height:100%;
     width: 100%;
     object-fit: cover;
+    margin-top: -25%;
 }
 
 button{
@@ -34,14 +37,16 @@ button{
     border-radius: 10%;
     background-color: antiquewhite;
 }
+
 @keyframes shake {  
-  0% { transform: translateY(0);}
+  0% { transform: translateY(0px);}
   25% { transform: translateY(-5px); }
-  50% { transform: translateY(5px); }
-  75% { transform: translateY(-5px); }
+  50% { transform: translateY(0px); }
+  75% { transform: translateY(5px); }
   100% { transform: translateY(0); }
 }
 
 .shake {
     animation: shake 1s ease;
+    animation-iteration-count: 3;
 }
