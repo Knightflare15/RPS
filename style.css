@@ -1,0 +1,47 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.score,.images{
+    display: flex;
+    justify-content: space-evenly;
+    flex :1;
+    gap: 10em;
+}
+.human,.computer{
+    background-color: beige;
+    border: 2px solid;
+    border-color: black;
+    text-align: center;
+    width: 200px;
+}
+
+img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button{
+    padding: 10%;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bolder;
+    border-radius: 10%;
+    background-color: antiquewhite;
+}
+@keyframes shake {  
+  0% { transform: translateY(0);}
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
+  75% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.shake {
+    animation: shake 1s ease;
+}
